@@ -37,3 +37,8 @@ const infoPersone= [
     image:'barbara-ramos-graphic-designer.jpg'
   }
 ]
+
+for (let i = 0; i < infoPersone.length; i++) {
+  console.log("nome: " + infoPersone[i].nome + " ruolo: "+  infoPersone[i].ruolo + " image: " + infoPersone[i].image);
+  
+}
