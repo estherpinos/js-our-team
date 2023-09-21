@@ -41,7 +41,7 @@ const infoPersone= [
 // 2.Faccio un ciclo per stampare in console i dati
 
 for (let i = 0; i < infoPersone.length; i++) {
-  let stringa = "nome: " + infoPersone[i].nome+ " ruolo: "+  infoPersone[i].ruolo + " image: " + infoPersone[i].image;
+  let stringa = "nome: " + infoPersone[i].nome + " ruolo: "+  infoPersone[i].ruolo + " image: " + infoPersone[i].image;
   console.log(stringa);
   document.getElementById("dati-persone").innerHTML+=`<h2>${stringa}</h2>`;
 
