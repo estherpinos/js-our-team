@@ -22,7 +22,7 @@ const infoPersone= [
   {
     nome:'Angela Lopez',
     ruolo:'Social Media Manager',	
-    image:'angela-lopez-social-media-manager.jp'
+    image:'angela-lopez-social-media-manager.jpg'
   },
 
   {
@@ -41,9 +41,18 @@ const infoPersone= [
 // 2.Faccio un ciclo per stampare in console i dati
 
 for (let i = 0; i < infoPersone.length; i++) {
-  let stringa = "nome: " + infoPersone[i].nome + " ruolo: "+  infoPersone[i].ruolo + " image: " + infoPersone[i].image;
-  console.log(stringa);
-  document.getElementById("dati-persone").innerHTML+=`<h2>${stringa}</h2>`;
+  let card = `
+  <div class="card text-center col-4" >
+    <img src="img/${infoPersone[i].image}" class="card-img-top" alt="">
+      <div class="card-body text-center ">
+           <h5 class="card-title">${infoPersone[i].nome}</h5>
+           <p class="card-text">${infoPersone[i].ruolo}</p>
+      </div>
+  </div>`;
 
+  document.getElementById(`dati-persone`).innerHTML+=card;
+
+
+ 
 }
 
